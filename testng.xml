@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel = "classes">
+  <test thread-count="2" name="DockerTest">
+<!-- <test name="DockerTest"> -->
+    <classes>
+      <class name="com.qa.docker.testScripts.DockerGrid_Setup"/>
+      <class name="com.qa.docker.testScripts.DockerChromeTest"/>
+      <class name="com.qa.docker.testScripts.DockerFirefoxTest"/>
+    </classes>
+  </test> <!-- DockerTest -->
+</suite> <!-- Suite -->
